@@ -1,0 +1,12 @@
+li a {
+    color: #b6b6b8;
+}
+
+body {
+    background: url(images/index.jpg);
+    background-size: cover;
+}
+
+h1 {
+    color: #eeedeb;
+}

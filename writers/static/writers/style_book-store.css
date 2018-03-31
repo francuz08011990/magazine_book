@@ -1,0 +1,16 @@
+body {
+    background: url(images/sdat-knigi.jpg), #F7C58A;
+    background-size: cover;
+}
+
+h1 {
+    color: #000000;
+}
+
+h2{
+    color: #fefdff;
+}
+
+p {
+    color: #000000;
+}

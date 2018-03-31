@@ -1,0 +1,28 @@
+{% load static %}
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+<link rel="stylesheet" type="text/css" href="{% static 'writers/style_book-store.css' %}"/>
+<title>Книги</title>
+{#</head>#}
+<body>
+<h1> Книги: {{ author.nickname }}</h1>
+
+<ol>
+
+{% for book in books %}
+
+    <h2>
+        {{ book.title }}
+    </h2>
+
+    <p>Published - {{ book.published }}</p>
+
+    <p>Length of pages {{ book.length }}</p>
+
+{% endfor %}
+
+</ol>
+</body>
+{#</html>#}

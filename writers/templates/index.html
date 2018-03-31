@@ -1,0 +1,38 @@
+{% load static %}
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+<title>Авторы</title>
+<link rel="stylesheet" type="text/css" href="{% static 'writers/style.css' %}" />
+{#</head>#}
+{#<body>#}
+<h1>Писатели</h1>
+
+{% if authors %}
+
+    <ol>
+        {% for author in authors %}
+
+            <h3>
+                <li>
+                    <a href="{% url 'books:shell' author.id %}"
+                       title="started carrier at {{ author.start_carrier }}">
+
+                        {{ author.nickname }}
+
+                    </a>
+                </li>
+            </h3>
+
+
+        {% endfor %}
+    </ol>
+
+{% else %}
+
+    <p>No authors present.</p>
+
+{% endif %}
+{#</body>#}
+{#</html>#}
